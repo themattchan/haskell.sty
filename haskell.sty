@@ -430,10 +430,10 @@
 
 % do expression
 %
-\hscommand{\hsdo}[2][t]{%
-  \hsalign[#1]{%
-    \hskwd{do}\\
-    \quad\hsalign{#2}\\
+\hscommand{\hsdo}[1]{%
+  \hskwd{do}
+  \hsbody{%
+    \hs@align{\quad}{#1}
   }%
 }
 
